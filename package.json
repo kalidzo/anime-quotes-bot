@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "node-fetch": "^3.2.10",
+    "telegraf": "3.32",
+    "telegram-keyboard": "^2.3.2"
+  },
+  "type": "module"
+}
