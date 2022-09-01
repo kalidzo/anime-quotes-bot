@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "google-translate-api-browser": "^1.1.71",
     "node-fetch": "^3.2.10",
     "telegraf": "3.32",
     "telegram-keyboard": "^2.3.2"
