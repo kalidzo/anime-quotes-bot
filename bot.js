@@ -32,10 +32,7 @@ ${language[0]=="uz" ? "👤Qahramon" : "👤Character"}: ${quote["character"]}
         getIt();
       } else {
         if (quote["error"] == "No related quotes found!") {
-          language[0]=="uz" ? 
-								ctx.reply("Aloqador matn topilmadi!")
-												:
-								ctx.reply(quote["error"]);
+								ctx.reply((language[0]=="uz" ? "Aloqador matn topilmadi!" : quote["error"]));
         } else {
           let number = Math.floor(Math.random() * quote.length);
 
