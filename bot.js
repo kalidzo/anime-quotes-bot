@@ -69,22 +69,24 @@ Select the language:
     keyboard.reply()
   );
 });
-bot.hears("🇺🇸", (ctx) => {
+bot.hears(["🇺🇸","English 🇺🇸"], (ctx) => {
   language = ["en", "uz"];
   const keyboard = Keyboard.make([
     ["Title name✏️"],
     ["Character name👤"],
     ["Random🎲"],
+    ["O'zbekcha 🇺🇿"]
   ]);
   ctx.reply("Get quotes by ...", keyboard.reply());
 });
 
-bot.hears("🇺🇿", (ctx) => {
+bot.hears(["🇺🇿","O'zbekcha 🇺🇿"],  (ctx) => {
   language = ["uz", "en"];
   const keyboard = Keyboard.make([
     ["Anime nomi✏️"],
     ["Qahramon ismi👤"],
     ["Tasodifiy🎲"],
+	  ["English 🇺🇸"]
   ]);
   ctx.reply("Matnlarni qaysi usulda qidirmoqchisiz ...", keyboard.reply());
 });
@@ -114,7 +116,6 @@ bot.hears(["Character name👤","Qahramon ismi👤"], (ctx) => {
   });
 });
 bot.hears(["Random🎲","Tasodifiy🎲"], (ctx) => {
-  console.log(language);
   getData("random", ctx);
 });
 
