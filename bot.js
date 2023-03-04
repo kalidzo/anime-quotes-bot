@@ -119,5 +119,10 @@ bot.hears(["Random🎲","Tasodifiy🎲"], (ctx) => {
   getData("random", ctx);
 });
 
-bot.launch();
+bot.launch({
+  webhook: {
+    domain: 'https://anime-quotes-bot.cyclic.app',
+    port: 3000
+  }
+})
 
