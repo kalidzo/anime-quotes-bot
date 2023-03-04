@@ -6,6 +6,7 @@ import { translate } from "google-translate-api-browser";
 // Bot Setup
 const bot = new Telegraf("5730057053:AAHhOtCv7JG9DR62AebQyROIAFIsZSwRPM0");
 const apiUrl = "https://animechan.vercel.app/api/";
+const port = process.env.PORT || 3000
 
 let language;
 
